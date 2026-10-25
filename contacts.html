@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="theme" rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <header>
+      <div class ="navbar">
+          <h1 class="titles">Aaron's Portfolio</h1>
+          <button class="theme-btn" onclick="thememode()"><img class="" src="Images/theme.png"></button>
+          <a href="index.html"><input type="button" class="custom-btn" value="Home"></a>
+          <a href="educc.html"><input type="button" class="custom-btn" value="Educational Background"></a>
+          <a href="certs.html"><input type="button" class="custom-btn" value="Experiences and Projects"></a>
+          <a href="skill.html"><input type="button" class="custom-btn" value="Skills and Abilities"></a>
+          <a href="contacts.html"><input type="button" class="custom-btn" value="Contact Me"></a>
+          <script>
+              function thememode(){
+                  let theme = document.getElementById("theme");
+
+                  if(theme.getAttribute('href') == 'contact.css'){
+                    theme.setAttribute('href', 'dcontact.css');
+                    localStorage.setItem('port-theme', 'dcontact.css');
+                  } else{
+                    theme.setAttribute('href', 'contact.css');
+                    localStorage.setItem('port-theme', 'contact.css');
+                  }
+               }
+           </script>
+      </div>
+  </header>
+  <body>
+    <div class="backgrounds">
+      <div class="content">
+        
+      <h2 class="educheader">Contact Me!</h2>
+
+       <div class="box">
+          <div class="mediumrect"></div>
+          <img class="logo" src="Images/Email.png">
+          <div class="texts">
+            <strong><p class="textforeduc">Email Me!</p></strong>
+            <p class="textforeduc">concepcionramcelaaron@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="mediumrect"></div>
+          <img class="logo" src="Images/Phone.png">
+          <div class="texts">
+            <strong><p class="textforeduc">Phone Number</p></strong>
+            <p class="textforeduc">09937886940</p>
+          </div>
+        </div>
+
+        <a href="https://www.facebook.com/ramcelaaron.concepcion/"><div class="box">
+          <div class="mediumrect"></div>
+          <img class="logo" src="Images/FB.png">
+          <div class="texts">
+            <strong><p class="textforeduc">Facebook</p></strong>
+           <p class="textforeduc">Aaron Concepcion</p>
+          </div>
+        </div></a>
+
+        <a href="www.linkedin.com/in/concepcion-ramcel-aaron-f-847635446"><div class="box">
+          <div class="mediumrect"></div>
+          <img class="logo" src="Images/15.png">
+          <div class="texts">
+            <strong><p class="textforeduc">LinkedIn</p></strong>
+            <p class="textforeduc">Concepcion, Ramcel Aaron, F.</p>
+          </div>
+        </div></a> 
+        <hr class="gradient" style="height: 3px; width: 2000px;">
+        <h2 class="educheader">See My Resume</h2>
+        
+            <iframe src="Images/Resume.pdf" width="1000px" height="850px" style="border:none;" title="PDF Viewer">
+            <p>Your browser does not support PDFs. <a href="Images/Resume.pdf">Download the PDF</a> instead.</p>
+            </iframe>
+            <div class="resume"></div>
+      </div>
+      </div>
+    </div> 
+  </body>
+    <footer>
+    <div class="footgrid">
+      <strong><p class="footgrid-items">Thank You for Viewing!</p></strong>
+    </div>
+  </footer>
+</html>

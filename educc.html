@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="theme" rel="stylesheet" href="educ.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <header>
+      <div class ="navbar">
+          <h1 class="titles">Aaron's Portfolio</h1>
+          <button class="theme-btn" onclick="thememode()"><img class="" src="Images/theme.png"></button>
+          <a href="index.html"><input type="button" class="custom-btn" value="Home"></a>
+          <a href="educc.html"><input type="button" class="custom-btn" value="Educational Background"></a>
+          <a href="certs.html"><input type="button" class="custom-btn" value="Experiences and Projects"></a>
+          <a href="skill.html"><input type="button" class="custom-btn" value="Skills and Abilities"></a>
+          <a href="contacts.html"><input type="button" class="custom-btn" value="Contact Me"></a>
+          <script>
+              function thememode(){
+                  let theme = document.getElementById("theme");
+
+                  if(theme.getAttribute('href') == 'educ.css'){
+                    theme.setAttribute('href', 'deduc.css');
+                    localStorage.setItem('port-theme', 'deduc.css');
+                  } else{
+                    theme.setAttribute('href', 'educ.css');
+                    localStorage.setItem('port-theme', 'educ.css');
+                  }
+               }
+           </script>
+      </div>
+  </header>
+  <body>
+    <div class="backgrounds">
+      <div class="content">
+        
+      <h2 class="educheader">Educational Background</h2>
+      <h3 class="subheads">College</h3>
+
+       <div class="box">
+          <div class="mediumrect"></div>
+          <img class="logo" src="Images/PUP Logo.png">
+          <div class="texts">
+            <strong><p class="textforeduc">Polytechnic University of the Philippines</p></strong>
+            <p class="textforeduc">2024-present</p>
+            <i><p class="textforeduc">Bachelor of Science in Information Technology</p></i>
+            <ul class="textforeduc">
+              <li>Specialization in Cybersecurity</li>
+              <li>President's Lister <i style="color:grey; font-size: 20px;">1st Year</i></li>
+              <li>Deans Lister <i style="color:grey; font-size: 20px;">2nd Year</i></li>
+            </ul>
+          </div>
+        </div>
+
+        
+        
+      <h3 style="top: 100px;"class="subheads">High School</h4>
+
+      <div class="box">
+        <div class="bigrect"></div>
+        <img class="logo" src="Images/SES Logo.png">
+        <div class="texts">
+          <strong><p class="textforeduc" >St. Edward School - Faith Campus</p></strong>
+          <p class="textforeduc">2022-2024</p>
+          <i><p class="textforeduc">Humanities and Social Science (HUMSS) Strand</p></i>
+          <ul class="textforeduc">
+              <li>Graduated with High Honors</li>
+              <li>Consistent Honor Student <i style="color:grey; font-size: 20px;">Grade 11-12</i></li>
+              <li>Awardee for Research And Innovation: Best Research <i style="color:grey; font-size: 20px;">Grade 12</i></li>
+              <li>Awardee for Research And Innovation: Best Research <i style="color:grey; font-size: 20px;">Grade 11</i></li>
+              <li>Out of the Box Strategist <i style="color:grey; font-size: 20px;">Work Immersion Program</i></li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="rect"></div>
+        <img class="logo" src="Images/MDA Logo.png">
+        <div class="texts"> 
+          <strong><p class="textforeduc">Mil-Den Academy</p></strong>
+          <p class="textforeduc">2018-2022</p>
+          <i><p class="textforeduc">Grade 8 - Grade 10</p></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="rect"></div>
+        <img class="logo" src="Images/SMAM Logo.png">
+        <div class="texts">
+          <strong><p class="textforeduc">St. Mary's Academy Manila</p></strong>
+          <p class="textforeduc">2017-2018</p>
+          <i><p class="textforeduc">Grade 5 - Grade 7</p></i>
+          <ul class="textforeduc">
+            <li>Deportment Awardee <i style="color:grey; font-size: 20px;">Grade 7</i></li>
+          </ul>
+        </div>
+       
+      </div>
+      </div>
+    </div> 
+  </body>
+    <footer>
+    <div class="footgrid">
+      <strong><p class="footgrid-items">Contact Me!</p></strong>
+     <p class="footgrid-items"><strong>Email: </strong>concepcionramcelaaron@gmail.com</p>
+     <p class="footgrid-items"><strong>Phone: </strong>(+63)9937886940</p>
+     <p class="footgrid-items"><strong>LinkedIn: </strong>Concepcion, Ramcel Aaron, F.</p>
+     
+    </div>
+  </footer>
+</html>

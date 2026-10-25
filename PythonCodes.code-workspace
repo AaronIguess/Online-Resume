@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "PythonCodes",
+			"path": ".."
+		},
+		{
+			"name": "Images",
+			"path": "../../../Downloads/Images"
+		}
+	],
+	"settings": {}
+}

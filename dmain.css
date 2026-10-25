@@ -1,0 +1,326 @@
+/* text fonts and adjustment settings */
+h1{
+  display: flex;
+  font-family: "Lexend";
+  font-size: 18px;
+  padding-right:100px;
+  color: whitesmoke;
+}
+footer{
+  margin: 0;
+  padding: 0;
+}
+
+hr.gradient {
+  height: 3px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgb(51, 51, 51) 21%,
+    rgb(123, 121, 121) 51%,
+    rgb(137, 137, 137) 100%
+  );
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(45, 27, 76, 0.651);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow:  5px 5px 10px 0px rgba(0, 0, 0, 0.561);
+}
+
+.educheader{
+  font-family: "Lexend";
+  font-size: 30px ;
+  font-display: swap;
+  color: whitesmoke;
+}
+.gap{
+  margin-top: 30px;
+}
+
+.subheads{
+  display: flex;
+  font-family: "Lexend";
+  font-size: 25px;
+  padding-top: 20px;
+  color: whitesmoke;
+}
+
+.subsubheads{
+  display: flex;
+  font-family: "Lexend";
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+
+.textforeduc{
+  margin: 2px 10px;
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+.textformain{
+  padding-top:10px;
+  font-size: 27px;
+  color: whitesmoke;
+}
+
+
+/* this is for the semi transparent background and the structure of the page*/
+
+.backgrounds{
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;       
+  background-color: #000000e2
+}
+.backgrounds::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Images/Background2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.55;
+  z-index: 1;
+}
+.content {
+  position: relative;
+  z-index: 2;                 
+  text-align: left;
+}
+
+.titles{
+  position: relative;
+  justify-self: left;
+  left: -270px;
+}
+.container{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+  font-family: "Outfit";
+  justify-self: center;
+  max-width: 1200px;
+}
+
+.container-items{
+  align-items: center;
+  font-family: "Outfit";
+}
+
+footer{
+  background-color: rgb(45, 27, 76);
+  color: whitesmoke;
+}
+
+.footgrid{
+  display: flex;
+  gap: 30px;
+  font-family: "Outfit";
+  justify-self: center;
+  margin-right: 100px;
+}
+
+.footgrid-items{
+  align-items: left;
+  font-family: "Outfit";
+}
+
+/* google font settings*/
+
+.outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.lexend-<uniquifier> {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/*shape modifiers*/
+
+.box{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position:relative;
+  width: 750px;
+  min-height: 100px;
+  margin: 20px auto;
+  font-family: "Outfit";
+  padding: 0 20px;
+}
+
+.box .mainrect{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top:0;
+  bottom: 0;
+  width: 900px;
+  height: 130px;
+  background-color: white;
+  box-shadow:  10px 10px 15px 0px rgba(0, 0, 0, 0.561);
+  border-radius: 13px;
+  z-index: 1;
+}
+
+.box .rect{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  width: 250px;
+  height: 130px;
+  background-color: white;
+  box-shadow:  10px 10px 15px 0px rgba(0, 0, 0, 0.561);
+  border-radius: 13px;
+  z-index: 1;
+}
+
+
+.resume{
+  display:flex;
+  position: relative;
+  justify-self: center;
+  padding-top:30px;
+  width:350px;
+  height: 500px;
+  z-index: 2;
+}
+
+.logo, .texts{
+  position: relative;
+  z-index: 2;
+}
+
+.rectmargins{
+  position:relative;
+  margin-top: -100px;
+  margin-bottom: -170px;
+}
+
+.theme-btn{
+  display: flex;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  border-radius: 100%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.theme-btn:hover{
+  transform: scale(1.1);
+  transform-origin: center center;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.222);
+}
+.logo{
+  width:70px;
+  height: 70px;
+  object-fit: contain;
+  justify-self: right;
+  position: relative;
+  z-index: 2;
+  right:-10px;
+}
+
+.pfp{
+  display: flex;
+  border-radius: 20px;
+  box-shadow:  10px 10px 15px 0px rgba(0, 0, 0, 0.561);
+  height: 420px;
+  width: 320px;
+  justify-self: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.pfp2{
+  display: flex;
+  border-radius: 20px;
+  box-shadow:  10px 10px 15px 0px rgba(0, 0, 0, 0.561);
+  height: 340px;
+  width: 340px;
+  justify-self: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.pfp3{
+  display: flex;
+  border-radius: 20px;
+  box-shadow:  10px 10px 15px 0px rgba(0, 0, 0, 0.561);
+  height: 620px;
+  width: 440px;
+  justify-self: center;
+  margin-top: 90px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+/*buttons and navigation bar settings*/
+
+
+.navbar{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+}
+
+a{
+  text-decoration: none;
+}
+
+.custom-btn{
+  all:unset;
+  padding: 12px 24px;
+  font-family: "Outfit";
+  font-size: 16px;
+  color:whitesmoke;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.custom-btn:hover{
+  transform: scale(1.1);
+  transform-origin: center center;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.222);
+}
+
+.pfp:hover{
+  transform: scale(1.1);
+  transform-origin: center center;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.222);
+}
+.pfp2:hover{
+  transform: scale(1.1);
+  transform-origin: center center;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.222);
+}
+

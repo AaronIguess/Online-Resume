@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skills and Abilities</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="theme" rel="stylesheet" href="skills.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <header>
+      <div class ="navbar">
+          <h1 class="titles">Aaron's Portfolio</h1>
+          <button class="theme-btn" onclick="thememode()"><img class="" src="Images/theme.png"></button>
+          <a href="index.html"><input type="button" class="custom-btn" value="Home"></a>
+          <a href="educc.html"><input type="button" class="custom-btn" value="Educational Background"></a>
+          <a href="certs.html"><input type="button" class="custom-btn" value="Experiences and Projects"></a>
+          <a href="skill.html"><input type="button" class="custom-btn" value="Skills and Abilities"></a>
+          <a href="contacts.html"><input type="button" class="custom-btn" value="Contact Me"></a>
+          <script>
+              function thememode(){
+                  let theme = document.getElementById("theme");
+
+                  if(theme.getAttribute('href') == 'skills.css'){
+                    theme.setAttribute('href', 'dskills.css');
+                    localStorage.setItem('port-theme', 'dskills.css');
+                  } else{
+                    theme.setAttribute('href', 'skills.css');
+                    localStorage.setItem('port-theme', 'skills.css');
+                  }
+               }
+           </script>
+      </div>
+  </header>
+  <body>
+    <div class="backgrounds">
+      <div class="content">
+        
+      <h2 class="educheader">Skills and Abilities</h2>
+      <h3 class="subheads">Technical Skills</h3>
+
+       <div class="box">
+          <div class="rect"></div>
+          <img class="logo" src="Images/Backend.png">
+          <div class="texts">
+            <strong><p class="textforeduc">Back End Programming</p></strong>
+            <ul class="textforeduc">
+              <li>Python <i style="color:grey; font-size: 20px;">including tkinter and data cleaning add-ons</i></li>
+              <li>Java <i style="color:grey; font-size: 20px;">Object-Oriented Programming</i></li>
+              <li>C</li>
+              <li>Basic SQL Queries</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="rect"></div>
+          <img class="logo" src="Images/Web.png">
+          <div class="texts">
+            <strong><p class="textforeduc">Web Design</p></strong>
+            <ul class="textforeduc">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Figma <i style="color:grey; font-size: 20px;">for Mobile App layouts and simulations</i></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="rect"></div>
+          <img class="logo" src="Images/MOS.png">
+          <div class="texts">
+            <strong><p class="textforeduc">Microsoft Office Suite</p></strong>
+            <ul class="textforeduc">
+              <li>Microsoft Word</li>
+              <li>Microsoft Excel</li>
+              <li>Microsoft PowerPoint</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="rect"></div>
+          <img class="logo" src="Images/canva.png">
+          <div class="texts">
+            <strong><p class="textforeduc">Photo Editing and Graphic Design</p></strong>
+            <ul class="textforeduc">
+              <li>Canva <i style="color:grey; font-size: 20px;">for publication and video creation</i></li>
+              <li>Photoshop <i style="color:grey; font-size: 20px;">for photo editing</i></li>
+              <li>Cap Cut <i style="color:grey; font-size: 20px;">for video editing</i></li>
+            </ul>
+          </div>
+        </div>
+
+        
+
+      <h3 style="left: -10px;"class="subheads">Soft Skills</h3>
+
+
+      <div class="box">
+        <div class="rect"></div>
+        <img class="logo" src="Images/softskills.png">
+        <div class="texts"> 
+          <strong><p class="textforeduc">Communication</p></strong>
+          <i><p class="textforeduc">I strive to always effectively communicate with colleagues, peers, and higher-ups to get information across and relay them to have everyone up-to-date and ready.</p></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="rect"></div>
+        <img class="logo" src="Images/softskills.png">
+        <div class="texts"> 
+          <strong><p class="textforeduc">Leadership</p></strong>
+          <i><p class="textforeduc">I have been put into many leadership roles relctantly or assretively, yet my goal in either case is to serve the project. I want to be efficient and quality with my works but I also want to know the people I work with and strive to make the workplace comfortable and the workflow excellent.</p></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="rect"></div>
+        <img class="logo" src="Images/softskills.png">
+        <div class="texts"> 
+          <strong><p class="textforeduc">Teamwork</p></strong>
+          <i><p class="textforeduc">I do as much as I can to contribute to the team and provide my attention and effort to have the best outcome for any task or project.</p></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="rect"></div>
+        <img class="logo" src="Images/softskills.png">
+        <div class="texts"> 
+          <strong><p class="textforeduc">Punctuality</p></strong>
+          <i><p class="textforeduc">I like to be on time or slighlty early to agendas not only to prepare myself but to also respect the time of others.</p></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="rect"></div>
+        <img class="logo" src="Images/softskills.png">
+        <div class="texts"> 
+          <strong><p class="textforeduc">Creative Thinking</p></strong>
+          <i><p class="textforeduc">When dealing with problems, and especially challenges in work or school, I like to take the creative route and find solutions that not only solve the problem effectively, but also find new and creative ways to work and improve upon each project. </p></i>
+        </div>
+      </div>
+
+      </div>
+      </div>
+    </div> 
+  </body>
+    <footer>
+    <div class="footgrid">
+      <strong><p class="footgrid-items">Contact Me!</p></strong>
+     <p class="footgrid-items"><strong>Email: </strong>concepcionramcelaaron@gmail.com</p>
+     <p class="footgrid-items"><strong>Phone: </strong>(+63)9937886940</p>
+     <p class="footgrid-items"><strong>LinkedIn: </strong>Concepcion, Ramcel Aaron, F.</p>
+     
+    </div>
+  </footer>
+</html>

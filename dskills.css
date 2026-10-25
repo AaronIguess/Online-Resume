@@ -1,0 +1,258 @@
+/* text fonts and adjustment settings */
+h1{
+  display: flex;
+  padding-right:100px;
+  font-family: "Lexend";
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(45, 27, 76, 0.561);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow:  5px 5px 10px 0px rgba(0, 0, 0, 0.561);
+}
+
+.educheader{
+  position: relative;
+  left: -290px;
+  font-family: "Lexend";
+  font-size: 50px ;
+  font-display: swap;
+  color: whitesmoke;
+}
+
+.subheads{
+  display: flex;
+  font-family: "Lexend";
+  left: -290px;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+
+.textforeduc{
+  margin: auto 5px;
+  font-size: 27px;;
+  max-width: 650px;
+  color: whitesmoke;
+}
+
+.titles{
+  position: relative;
+  justify-self: left;
+  left: -270px;
+  color: whitesmoke;
+}
+
+/* this is for the semi transparent background and the structure of the page*/
+.backgrounds{
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;       
+  background-color: #00000076
+}
+.backgrounds::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Images/Background2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.55;
+  z-index: 1;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;                 
+  align-items: center;
+}
+
+footer{
+  background-color: rgb(45, 27, 76);
+  color: whitesmoke;
+}
+
+.footgrid{
+  display: flex;
+  gap: 30px;
+  font-family: "Outfit";
+  justify-self: center;
+  margin-right: 100px;
+}
+
+.footgrid-items{
+  align-items: left;
+  font-family: "Outfit";
+}
+
+/* google font settings*/
+
+.outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.lexend-<uniquifier> {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/*shape modifiers*/
+
+.box{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position:relative;
+  min-width: 1050px;
+  min-height: 300px;
+  margin: 20px auto;
+  font-family: "Outfit";
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  padding: 0 20px;
+}e
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.box::after ,.box::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1050px;
+  background-image: conic-gradient(from var(--angle),#4c00b0, #8a00c2, #b100cd, #ca5cdd, #4c00b0);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  padding: 3px;
+  border-radius: 13px;
+  animation: 3s spin linear infinite;
+}
+@keyframes spin {
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle:360deg;
+  }
+}
+.box::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+.box .rect{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  width: 1050px;
+  height: 300px;
+  background-color: rgb(28, 26, 33);
+  border-radius: 13px;
+  z-index: 1;
+}
+
+.logo, .texts{
+  position: relative;
+  z-index: 2;
+}
+
+.rectmargins{
+  position:relative;
+  margin-top: -100px;
+  margin-bottom: -170px;
+}
+
+.box:hover{
+  transform: scale(1.1);
+  transform-origin: center center;
+}
+
+.logo{
+  width:170px;
+  height: 170px;
+  object-fit: contain;
+  justify-self: right;
+  position: relative;
+  z-index: 2;
+  top: 0px;
+  right:-15px;
+  background-color: transparent;
+}
+
+.theme-btn{
+  display: flex;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  border-radius: 100%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.theme-btn:hover{
+  transform: scale(1.1);
+  transform-origin: center center;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.222);
+}
+
+/*buttons and navigation bar settings*/
+
+.navbar{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+}
+
+a{
+  text-decoration: none;
+}
+
+.custom-btn{
+  all:unset;
+  justify-self: center;
+  padding: 12px 24px;
+  font-family: "Outfit";
+  font-size: 16px;
+  color:whitesmoke;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.custom-btn:hover{
+  transform: scale(1.1);
+  transform-origin: center center;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.222);
+}

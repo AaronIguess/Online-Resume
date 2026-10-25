@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Experiences and Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="theme" rel="stylesheet" href="certs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <header>
+      <div class ="navbar">
+          <h1 class="titles">Aaron's Portfolio</h1>
+          <button class="theme-btn" onclick="thememode()"><img class="" src="Images/theme.png"></button>
+          <a href="index.html"><input type="button" class="custom-btn" value="Home"></a>
+          <a href="educc.html"><input type="button" class="custom-btn" value="Educational Background"></a>
+          <a href="certs.html"><input type="button" class="custom-btn" value="Experiences and Projects"></a>
+          <a href="skill.html"><input type="button" class="custom-btn" value="Skills and Abilities"></a>
+          <a href="contacts.html"><input type="button" class="custom-btn" value="Contact Me"></a>
+          <script>
+              function thememode(){
+                  let theme = document.getElementById("theme");
+
+                  if(theme.getAttribute('href') == 'certs.css'){
+                    theme.setAttribute('href', 'dcerts.css');
+                    localStorage.setItem('port-theme', 'dcerts.css');
+                  } else{
+                    theme.setAttribute('href', 'certs.css');
+                    localStorage.setItem('port-theme', 'certs.css');
+                  }
+               }
+           </script>
+      </div>
+  </header>
+  <body>
+    <div class="backgrounds">
+        <div class="content">
+        
+         <h2 class="educheader">Experiences and Projects</h2>
+         <h3 class="subheads">Courses and Certifications</h3>
+
+         <img src="Images/Certificate1.png" class="certificate">
+         <div class="box">
+          <div class="mediumrect"></div>
+          <div class="texts">
+            <strong><p class="textforeduc">Cybersecurity - ADBInstitute</p></strong>
+            <p class="textforeduc" style="color:gray; font-size: 20px;"><i>October 7, 2026</i></p>
+            <p class="textforeduc">Took a cybersecurity course which has covered the many subsets of Cybersecurity from risk identification, prevention plans, and risk management as well as participated in a quiz to earn a certification.</p>
+          </div>
+         </div>
+         <hr class="gradient" style="height: 3px; width: 2000px;">
+            <img src="Images/Certificate2.png" class="certificate">
+         <div class="box">
+          <div class="mediumrect"></div>
+          <div class="texts">
+            <strong><p class="textforeduc">Security 101 - BlackStride Cyber</p></strong>
+            <p class="textforeduc" style="color:gray; font-size: 20px;"><i>August 28, 2026</i></p>
+            <p class="textforeduc">Attended a 1.5-hour BlackStride Cyber Webinar, demonstrating commitment to continuous learning in foundational Al concepts.</p>
+          </div>
+         </div>
+         <hr class="gradient" style="height: 3px; width: 2000px;">
+         <img src="Images/Certificate3.png" class="certificate">
+         <div class="box">
+            <div class="mediumrect"></div>
+          <div class="texts">
+            <strong><p class="textforeduc">Google Cloud Platform Fundamentals: Core Infrastructure</p></strong>
+            <p class="textforeduc" style="color:gray; font-size: 20px;"><i>December 4, 2025</i></p>
+             <p class="textforeduc">Participated in a workshop and hands-on using Google Cloud and performing fundamental set-ups.</p>
+          </div>
+         </div>
+         <hr class="gradient" style="height: 3px; width: 2000px;">
+         <h3 class="subheads">Projects</h3>
+
+         <iframe src="Images/An Approximation of the Error-Collection Methods  of the Philippine Statistics Authority - Central Office.pdf" width="1000px" height="750px" style="border:none;" title="PDF Viewer">
+         <p>Your browser does not support PDFs. <a href="Images/An Approximation of the Error-Collection Methods  of the Philippine Statistics Authority - Central Office.pdf">Download the PDF</a> instead.</p>
+         </iframe>
+
+         <div class="box">
+            <div class="bigrect"></div>
+            <div class="texts">
+                <strong><p class="textforeduc">An Approximation of the Error-Collection Methods  of the Philippine Statistics Authority - Central Office</p></strong>
+                <p class="textforeduc" style="color:gray; font-size: 20px;"><i>Feb 2026 - June 2026</i></p>
+                 <ul class="textforeduc">
+                     <li>Developed and Presented a Error Collection system for erroneous data from legal documents for cross referencing with a group.</li>
+                     <li>Conducted Research and Programmed the Entry System and UI/UX of the program.</li>
+                    <li>As a group, presented the project and program to the PSA Library in Quezon City.</li>
+                 </ul>
+                </div>
+            </div>
+
+        </div>
+      </div>
+      </div>
+    </div> 
+  </body>
+    <footer>
+    <div class="footgrid">
+      <strong><p class="footgrid-items">Contact Me!</p></strong>
+     <p class="footgrid-items"><strong>Email: </strong>concepcionramcelaaron@gmail.com</p>
+     <p class="footgrid-items"><strong>Phone: </strong>(+63)9937886940</p>
+     <p class="footgrid-items"><strong>LinkedIn: </strong>Concepcion, Ramcel Aaron, F.</p>
+     
+    </div>
+  </footer>
+</html>

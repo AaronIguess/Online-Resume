@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aaron's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="theme" rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <header>
+        <div class ="navbar">
+          <h1 class="titles">Aaron's Portfolio</h1>
+          <button class="theme-btn" onclick="thememode()"><img class="" src="Images/theme.png"></button>
+          <a href="index.html"><input type="button" class="custom-btn" value="Home"></a>
+          <a href="educc.html"><input type="button" class="custom-btn" value="Educational Background"></a>
+          <a href="certs.html"><input type="button" class="custom-btn" value="Experiences and Projects"></a>
+          <a href="skill.html"><input type="button" class="custom-btn" value="Skills and Abilities"></a>
+          <a href="contacts.html"><input type="button" class="custom-btn" value="Contact Me"></a>
+          <script>
+              function thememode(){
+                  let theme = document.getElementById("theme");
+
+                  if(theme.getAttribute('href') == 'main.css'){
+                    theme.setAttribute('href', 'dmain.css');
+                    localStorage.setItem('port-theme', 'dmain.css');
+                  } else{
+                    theme.setAttribute('href', 'main.css');
+                    localStorage.setItem('port-theme', 'main.css');
+                  }
+               }
+           </script>
+        </div>
+  </header>
+  <body>
+    
+    <div class="backgrounds">
+      <div class="content">
+        
+      <h2 class="educheader">Hello, Welcome to My Portfolio!</h2>
+      <h3 class="subheads">Overview</h3>
+      <div class="container">
+        <img class="pfp" src="Images/Me.png">
+        <div class="container-items">
+          <strong><p class="textformain">Hello! I am Ramcel Aaron F. Concecpion</p></strong>
+          <p class="textformain">I am a third-year College Student currently studying in the Polytechnic University of the Philippines studying for my Bachelor of Science in Information Technology Specializing in Cybersecurity, a Student Artist, and a Graphic Design Enthusiast. I have been a leader and a follower, I am a team player that gives everything for the benefit and the efficiency of a project. I am a learner, observer, and an aspiring Cybersecurity professional. I express my passion through my work from my academic to extre-curricular work.</p>
+        </div>
+      </div>
+      
+      <div class="gap"></div>
+      <hr class="gradient" style="height: 3px; width: 100%;">
+       <h3 class="subheads">A Little Bit More About Me</h3>
+
+
+       <div class="container">
+        <div class="container-items">
+         <i><strong><p class="textformain">As an aspiring Cybersecurity Professional,</p></strong></i> 
+         <p class="textformain">I want to learn and apply as much information as I can; from Danger Identification, Risk Prevention, Planning, to Security Application. I am still learning, but I use my time to find avenues to learn may it be from courses online and in-person or from experiences gained from passion projects and my education. I strive to keep learning, improving, and most of all, give back to the community here at home as much as I can.</p>
+         <a href="certs.html"><p class="textforeduc"><i>see Experiences and Projects page</i></p></a>
+        </div>
+        <img class="pfp2" src="Images/1.png">
+       </div>
+       <div class="gap"></div>
+        <hr class="gradient" style="height: 3px; width: 100%;">
+       <div class="container">
+        <img class="pfp3" src="Images/Performance.jpg">
+        <div class="container-items">
+         <i><strong><p class="textformain">As a Student Artist,</p></strong></i> 
+          <p class="textformain">I have been passionate about music since I was a kid. From listening to the Beatles with my family 'till now. I have been blessed with many opportunities with music. I was part of a band "Solhetta" and won two awards.</p>
+          <strong><i><ul class="textforeduc">
+            <li>Champion | Banduelo: Battle of the Bands</li>
+            <li>2nd Place | Big@10: Battle of the Bands</li>
+          </ul></i></strong>
+          <p class="textformain">Since then, I have embarked on my other passion of chorale singing and became a member of the PUP Bagong Himig Serenata as a Tenor 2 vocalist. I have been blessed to have been part of the International Competition Team as the chorale went on to win many competitions.</p>
+          <strong><i><ul class="textforeduc">
+            <li> Grand Prix Champion | 1st Yogyakarta International Choral Festival</li>
+            <li> Folksong Category Winner | 1st Yogyakarta International Choral Festival</li>
+            <li> Pop and Jazz Category Winner | 1st Yogyakarta International Choral Festival</li>
+            <li> Mixed Choir Category Winner | 1st Yogyakarta International Choral Festival</li>
+            <li> Champion | Carols in the Walls</li>
+            <div class="gap"></div>
+          </ul></i></strong>
+        </div>
+       </div>
+        
+ 
+      </div>
+      </div>
+    </div> 
+  </body>
+  <footer>
+    <div class="footgrid">
+      <strong><p class="footgrid-items">Contact Me!</p></strong>
+     <p class="footgrid-items"><strong>Email: </strong>concepcionramcelaaron@gmail.com</p>
+     <p class="footgrid-items"><strong>Phone: </strong>(+63)9937886940</p>
+     <p class="footgrid-items"><strong>LinkedIn: </strong>Concepcion, Ramcel Aaron, F.</p>
+     
+    </div>
+  </footer>
+</html>
